@@ -1,1 +1,8 @@
-
+let superbowlWin = (record) => {
+    let result = record.find(record => record.result === "W" )
+    if (result === undefined){
+      return undefined
+    }else{
+      return result.year
+    }
+  }
